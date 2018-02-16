@@ -1,0 +1,33 @@
+<%- include  header.ejs %>
+<!-- The scrollable main view container -->
+<main>
+  <h2>Add new</h2>
+
+  <% if(status === 'success'){ %>
+    <div class="message"><i class="fa fa-check-circle"></i>Book Added!</div>
+  <% } else if (status === 'error'){ %>
+    <div class="message"><i class="fa fa-exclamation-circle"></i> There was a problem adding that book. Please check form for errors.</div>
+  <% } %>
+
+  <form action="/addnew/submit" method="POST">
+    <label for="title">Title</label>
+    <br>
+    <input type="text" name="title"></input>
+    <br>
+    <label for="genre">Genre</label>
+    <br>
+    <input type="text" name="genre"></input>
+    <br>
+    <label for="author">Author</label>
+    <br>
+    <input type="text" name="author"></input>
+    <br>
+    <label for="title">Description</label>
+    <br>
+    <textarea rows="5" name="description"></textarea>
+    <br>
+    <button type="submit" name="submit">Add</button>
+  </form>
+
+</main>
+<%- include  footer.ejs %>

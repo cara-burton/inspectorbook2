@@ -1,0 +1,23 @@
+<%- include  header.ejs %>
+
+<!-- The scrollable main view container -->
+<main>
+  <h2>All books</h2>
+
+  <ul>
+    <% for (var i = 0; i <books.length; i++) { %>
+
+      <li>
+        <a href="/detail/<%= books[i]._id  %>">
+        <h5><%= books[i].author %></h5>
+        <h6><%= books[i].genre%></h6>
+        <p><%= books[i].description %></p>
+      </a>
+      </li>
+
+    <% } %>
+  </ul>
+
+</main>
+
+<%- include  footer.ejs %>

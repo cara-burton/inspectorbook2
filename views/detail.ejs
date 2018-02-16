@@ -1,0 +1,14 @@
+<%- include  header.ejs %>
+
+<!-- The scrollable main view container -->
+<main>
+  <h2><%= book.title %></h2>
+  <h5><%= book.author %><h5>
+  <h5><%= book.genre %></h5>
+  <p><%= book.description %></p>
+  <form action="/detail/<%= book._id %>/delete" method="POST">
+    <button type="submit">Delete book</button>
+  </form>
+</main>
+
+<%- include  footer.ejs %>
