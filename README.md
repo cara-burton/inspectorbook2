@@ -4,10 +4,13 @@
 *This app is to help readers research and review books that they like or would like to read. This enables such reader to also inform other fellow readers to join in and contribute to the reviews and make recommendations for their holiday or for the pure fun of just wanting to read a book.*
 
 ### Function of App
-+Write a review on your most recently read book
-+Find where you can buy the book you are after
-+Find the book you are looking to read
-+Help people find the books they're after
+Write a review on your most recently read book
+
+Find where you can buy the book you are after
+
+Find the book you are looking to read
+
+Help people find the books they're after
 
 #### Options available on app
 | Option | Description |
